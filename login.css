@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -43,6 +46,11 @@ body {
   padding: 10px 90px;
   background: #e3e6f3;
   z-index: 100;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 #navbar {
   display: flex;
@@ -344,13 +352,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: white;
-    position: absolute;
+    background-color: #e3e6f3;
+    justify-content: left;
     right: 0;
     top: 0;
     width: 250px;
     z-index: 10;
-    height: 400px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
   }
   #navbar li {
     padding: 18px;

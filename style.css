@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 /* section 1 content  */
 #navtopbanner {
@@ -33,11 +37,18 @@
 /* section  2 content  */
 #header {
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: space-between;
   padding: 10px 90px;
   background: #e3e6f3;
   z-index: 100;
+  transition: top 0.3s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 #navbar {
   display: flex;
@@ -102,8 +113,6 @@
   font-size: 20px;
 }
 
-
-
 /* section 3 content  */
 #nbanner {
   background-color: maroon;
@@ -127,7 +136,6 @@
 #nbanner li a:hover {
   color: rgb(179, 179, 179);
 }
-
 
 #hero {
   background-image: url("https://ramasarees.com/wp-content/uploads/2021/05/IMG_9019-min-scaled.jpg");
@@ -327,12 +335,10 @@
 #product1 .pro {
   position: relative;
   cursor: pointer;
-  /* border: 2px solid red; */
   background-color: white;
-  /* border-radius: 20px; */
   margin: 30px 10px;
 }
-.pro:hover{
+.pro:hover {
   box-shadow: 0px 0px 45px -28px rgb(0, 0, 0);
 }
 
@@ -606,15 +612,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: white;
-    position: absolute;
+    background-color: #e3e6f3;
+    justify-content: left;
     right: 0;
     top: 0;
     width: 250px;
     z-index: 10;
-   
-    height: 400px;
-    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
   }
   #navbar li {
     padding: 18px;
