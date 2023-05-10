@@ -7,9 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -31,9 +33,11 @@ body {
   width: 210px;
   margin-right: 60px;
 }
+
 #followus i {
   color: white;
 }
+
 #followus i:hover {
   color: rgb(186, 186, 186);
 }
@@ -47,16 +51,19 @@ body {
   background: #e3e6f3;
   z-index: 100;
 }
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
+
 #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #navbar li {
   list-style: none;
   padding: 0 20px;
@@ -71,10 +78,12 @@ body {
   cursor: pointer;
   transform: 0.3s ease;
 }
+
 #navbar li a:hover,
 #navbar li a.active {
   color: rgb(142, 136, 136);
 }
+
 #navbar li a.active::after,
 #navbar li a:hover::after {
   content: "";
@@ -85,21 +94,26 @@ body {
   left: 20px;
   background-color: rgb(150, 150, 150);
 }
+
 .closemenu {
   display: none;
 }
+
 #navbarfull {
   display: flex;
   justify-content: space-between;
 }
+
 #navicons {
   display: flex;
   justify-content: space-around;
   width: 125px;
 }
+
 .menuicons {
   display: none;
 }
+
 .crossicons {
   display: none;
 }
@@ -107,6 +121,7 @@ body {
 #searchicon {
   display: initial;
 }
+
 #navbaricon {
   display: none;
 }
@@ -120,25 +135,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #nbanner li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
+
 #nbanner li a {
   text-decoration: none;
   cursor: pointer;
   color: white;
   transform: 0.3s ease;
 }
+
 #nbanner li a:hover {
   color: rgb(179, 179, 179);
 }
-@media screen and (max-width:450px){
-  #nbanner{
+
+@media screen and (max-width:450px) {
+  #nbanner {
     font-size: 10px;
   }
-  }
+}
 
 
 
@@ -151,15 +170,18 @@ body {
   align-items: center;
   height: 450px;
 }
+
 #loginform h3 {
   margin-bottom: 35px;
 }
+
 #lform {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #lform input {
   width: 270px;
   height: 33px;
@@ -168,6 +190,7 @@ body {
   border: 1px solid rgb(174, 171, 171);
   margin-top: 20px;
 }
+
 #fogpass {
   font-size: 12px;
   display: flex;
@@ -176,32 +199,40 @@ body {
   color: maroon;
   margin-top: 10px;
 }
+
 #fogpass:hover {
   color: rgb(170, 53, 53);
 }
+
 #lform span {
   font-size: 12px;
   margin-top: 9px;
 }
+
 #formspana {
   color: maroon;
 }
+
 #formbtn {
   cursor: pointer;
   background-color: maroon;
   color: white;
 }
+
 #formbtn:hover {
   background-color: rgb(170, 53, 53);
 }
+
 ::placeholder {
   color: rgb(0, 0, 0);
   font-size: 11px;
   font-family: "Noto Sans", sans-serif;
 }
+
 .loginforminput {
   padding: 0 13px;
 }
+
 /* footer content  */
 footer {
   width: 100%;
@@ -218,14 +249,17 @@ footer .content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 footer .content p,
 a {
   color: #fff;
 }
+
 footer .content .box {
   width: 33%;
   transition: all 0.4s ease;
 }
+
 footer .content .topic {
   font-size: 22px;
   font-weight: 600;
@@ -239,41 +273,51 @@ footer .content .topic {
   color: rgb(190, 189, 189);
   line-height: 1.7;
 }
- .email a{
+
+.email a {
   text-decoration: none;
   color: rgb(190, 189, 189);
   line-height: 1.7;
-  }
-  .email a:hover{
-    text-decoration: underline;
-    color: #939393;
-  
-  }
-  .phone{
-    color:rgb(190, 189, 189);
-  }
+}
+
+.email a:hover {
+  text-decoration: underline;
+  color: #939393;
+
+}
+
+.phone {
+  color: rgb(190, 189, 189);
+}
+
 footer .content p {
   text-align: justify;
   color: rgb(190, 189, 189);
 }
+
 footer .content .lower .topic {
   margin: 24px 0 5px 0;
 }
+
 footer .content .lower i {
   padding-right: 16px;
 }
+
 footer .content .middle {
   padding-left: 80px;
 }
+
 footer .content .middle a {
   line-height: 32px;
   text-decoration: none;
   color: rgb(190, 189, 189);
 }
+
 footer .content .middle a:hover {
   color: #939393;
   text-decoration: underline;
 }
+
 footer .content .right input[type="text"] {
   height: 35px;
   width: 70%;
@@ -285,12 +329,14 @@ footer .content .right input[type="text"] {
   font-size: 17px;
   border: 1px solid #3c3c3c;
 }
+
 footer .content .right input[type="text"]::placeholder {
   color: rgb(190, 189, 189);
   font-style: italic;
   font-size: 13px;
   font-weight: 100;
 }
+
 footer .content .right input[type="submit"] {
   height: 35px;
   width: 70%;
@@ -305,11 +351,13 @@ footer .content .right input[type="submit"] {
   border: 1px solid #3c3c3c;
   transition: all 0.3s ease-in-out;
 }
+
 .content .right input[type="submit"]:hover {
   background: none;
   color: black;
   border-color: black;
 }
+
 footer .content .media-icons a {
   font-size: 16px;
   height: 45px;
@@ -322,47 +370,76 @@ footer .content .media-icons a {
   margin: 30px 5px 0 0;
   transition: all 0.3s ease;
 }
+
 .content .media-icons a:hover {
   border-color: black;
 }
+
 footer .bottom {
   width: 100%;
   text-align: right;
   color: #d9d9d9;
   padding: 0 40px 5px 0;
 }
+
 footer .bottom a {
   color: black;
 }
+
 footer a {
   transition: all 0.3s ease;
 }
+
 footer a:hover {
   color: black;
 }
+
 @media (max-width: 1100px) {
   footer .content .middle {
     padding-left: 50px;
   }
 }
+
 @media (max-width: 950px) {
   footer .content .box {
     width: 50%;
   }
+
   .content .right {
     margin-top: 40px;
   }
 }
+
 @media (max-width: 560px) {
   footer {
     position: relative;
   }
+
   footer .content .box {
     width: 100%;
     margin-top: 30px;
   }
+
   footer .content .middle {
     padding-left: 0;
+  }
+
+  footer .content .topic {
+    font-size: 15px;
+  }
+
+  footer .content p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .phone,
+  .email {
+    font-size: 12px;
+  }
+
+  footer .content .middle a {
+    font-size: 12px;
   }
 }
 
@@ -376,17 +453,19 @@ footer a:hover {
 }
 
 @media screen and (max-width:600px) {
-  #cright{
+  #cright {
     font-size: 12px;
   }
-  
+
 }
+
 @media screen and (max-width:400px) {
-  #cright{
+  #cright {
     font-size: 9px;
   }
-  
+
 }
+
 /* media queries  */
 
 @media screen and (max-width: 720px) {
@@ -400,6 +479,7 @@ footer a:hover {
     padding: 10px 45px;
   }
 }
+
 @media screen and (max-width: 500px) {
   #header {
     display: flex;
@@ -415,12 +495,15 @@ footer a:hover {
   #navicons {
     width: 140px;
   }
+
   #followus {
     display: none;
   }
+
   #navtopbannerp1 {
     display: none;
   }
+
   .closemenu {
     display: initial;
     font-weight: 300;
@@ -431,6 +514,7 @@ footer a:hover {
     justify-content: center;
     text-align: center;
   }
+
   .crossicons {
     display: initial;
     position: relative;
@@ -439,25 +523,27 @@ footer a:hover {
   }
 
   #navbar {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #e3e6f3;
     justify-content: left;
-    right: 0;
-    top: 0;
-    width: 250px;
+    right: -100%;
+    top: 100px;
+    width: 550px;
     z-index: 10;
     margin: 0;
     padding: 0;
     position: fixed;
     height: 100%;
     overflow: auto;
+ 
   }
+
   #navbar li {
     padding: 18px;
   }
+
   #navbaricon {
     display: initial;
   }
@@ -468,3 +554,21 @@ footer a:hover {
     color: green;
   }
 }
+
+ @media screen and (max-width:700px) {
+  #navbar{
+    
+    width: 450px;
+  }
+}
+@media screen and (max-width:550px) {
+  #navbar{
+    top: 90px;
+    width: 350px;
+  }
+}
+@media screen and (max-width:400px) {
+  #navbar{
+        width: 290px;
+  } 
+} 
