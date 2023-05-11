@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"); */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 html {
   scroll-behavior: smooth;
@@ -512,6 +514,8 @@ footer .content {
 footer .content p,
 a {
   color: #fff;
+  /* font-size: 50px; */
+  line-height:1.45;
 }
 footer .content .box {
   width: 33%;
@@ -726,7 +730,7 @@ footer a:hover {
     background-color: #e3e6f3;
     justify-content: left;
     right: -100%;
-    top: 100px;
+    top: 0px;
     width: 550px;
     z-index: 10;
     margin: 0;
@@ -752,7 +756,7 @@ footer a:hover {
 }
 @media screen and (max-width:550px) {
   #navbar{
-    top: 90px;
+   
     width: 350px;
   }
 }
